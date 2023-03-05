@@ -1,9 +1,16 @@
+本ページは元のGitLabの概要を日本語に翻訳したものです。
+(元のGitLab->https://gitlab.com/RikGhosh487/exploreandgivemore)
+
 # Explore&GiveMore
 
-**Canvas/Discord Group Number:** 11 AM - Group 8
+----
 
-## The Developer Team
-| Name | GitLabID | UT EID
+**プロジェクト提案：** Explore＆GiveMoreウェブサイトは、市の情報、公共の観光名所、そしてどのような慈善団体がこの市と深く関わっているかについて、包括的な都市ガイドとなることを目指しています。この都市ガイドは、収益や救済の面で市を直接支援する都市と観光名所を強調し、人々が寄付できる慈善団体を紹介することを目的としています。
+
+
+
+## 開発チーム
+| 名前 | GitLabID | 大学ID
 | :--: | :--: | :--: |
 | Rik Ghosh | [`RikGhosh487`](https://gitlab.com/RikGhosh487) | `rgg857` |
 | Katherine Eisen | [`katherine-eisen`](https://gitlab.com/katherine-eisen) | `kee663` |
@@ -13,13 +20,13 @@
 
 ----
 
-**Phase 1 Leader: Rik Ghosh**
-> Role of leader:
-> - Guided group meetings
-> - Clarified questions regarding design choices or bugs.
-> - Created and designated tasks and issues on GitLab
+** フェーズ１ リーダー: Rik Ghosh**
+> 役割:
+> - ミーティングのまとめ
+> - デザインの選択肢やバグに関する質問の明確化
+> - Gitlにおけるタスクとイシューの管理
 
-| Name | Estimated Completion Time | Actual Completion Time |
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
 | :--: | :--: | :--: |
 | Rik Ghosh | 15 hrs  | 20 hrs |
 | Katherine Eisen | 15 hrs | 17 hrs |
@@ -29,15 +36,15 @@
 
 ----
 
-**Phase 2 Leader: Daimu Iwata**
-> Role of leader:
-> - Oversaw extraction of data from APIs and implemented scraping scripts
-> - Created Backend hosting through Google Cloud Run and deployed updated instances
-> - Found and scraped companion APIs for richer data for models
-> - Extensively managed local GitLab runner for pipelines
-> - Resolved bugs and errors in testing components
+**フェーズ２ リーダー: Daimu Iwata**
+> 役割:
+> - APIからのデータ抽出の概算、スクレイピングスクリプトの実装
+> - Google Cloud Runを利用してのバックエンドのホスティングの作成、更新されたインスタンスのデプロイ
+> - モデルの画像などのリッチデータのためのAPIスクレイピングを実装
+> - GitLab runnerのパイプライン
+> - テストコンポーネントのバグの修正
 
-| Name | Estimated Completion Time | Actual Completion Time |
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
 | :--: | :--: | :--: |
 | Rik Ghosh | 40 hrs  | 50 hrs |
 | Katherine Eisen | 25 hrs | 33 hrs |
@@ -47,13 +54,13 @@
 
 ----
 
-**Phase 3 Leader: Katherine Eisen**
-> Role of leader:
-> - Opened issues upfront about everything to be completed this phase
-> - Created the search/sort/filter bar component present on the model pages
-> - Added additional frontend tests to handle searching, sorting, and filtering
+**フェーズ３ リーダー: Katherine Eisen**
+> 役割:
+> - フェーズ３におけるイシューの提案
+> - モデルページにおける「検索/ソート/フィルター」バーの作成
+> - 検索、ソート、フィルターにおけるフロントエンドテストの追加
 
-| Name | Estimated Completion Time | Actual Completion Time |
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
 | :--: | :--: | :--: |
 | Rik Ghosh | 25 hrs  | 15 hrs |
 | Katherine Eisen | 30 hrs | 18 hrs |
@@ -63,30 +70,44 @@
 
 ----
 
+**フェーズ４ リーダー: Mariana Medina**
+> 役割:
+> - フロントエンドページの整理
+> - フロントエンドのファイルのフォーマット
+> - プレゼンテーションのデザイン
+
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
+| :--: | :--: | :--: |
+| Rik Ghosh | 10 hrs  | 8 hrs |
+| Katherine Eisen | 5 hrs | 2 hrs |
+| Mariana Medina | 5 hrs | 3 hrs |
+| Daimu Iwata | 2 hrs | 2 hrs |
+| Jarrod Brown | 2 hrs | 2 hrs  |
+
+----
+
 ## Project Information
 
-- **Latest Git SHA**: `264de20720467090356d817ea60e2148a10d501f`
-- **Project Website:** [exploreandgivemore.me](https://www.exploreandgivemore.me)
+- **最新のGit SHA**: `264de20720467090356d817ea60e2148a10d501f`
+- **プロジェクトのWebページ:** [exploreandgivemore.me](https://www.exploreandgivemore.me)
 - **GitLab Pipelne:** [GitLab Pipeline](https://gitlab.com/RikGhosh487/exploreandgivemore/-/blob/main/.gitlab-ci.yml)
-- **URL of GitLab Repository:** [ExploreAndGiveMore](https://gitlab.com/RikGhosh487/exploreandgivemore)
+- **GitLabレポジトリのURL:** [ExploreAndGiveMore](https://gitlab.com/RikGhosh487/exploreandgivemore)
 
 <details>
-    <summary markdown="span"> View Previous SHAs </summary>
+    <summary markdown="span"> 以前のSHAs </summary>
     <ul>
         <li> Phase I - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/b0a7d66442e7e2fd6beb882a8465b2a0e424d81a" target="blank_">b0a7d66</a>
         <li> Phase II - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/f7ee67699948f803fb0c83a5d4bfc03b1c23ac1b" target="blank_">f7ee676</a>
         <li> Phase III - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/264de20720467090356d817ea60e2148a10d501f" target="blank_">264de20</a>
+        <li> Phase IV - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/f9ff5a4311d3b93036625e6dc60c573ef1c2a9e5" target="blank_">f9ff5a4</a>
     </ul>
 </details>
 
-----
-
-**Project Proposal:** The Explore&GiveMore website aims to become a comprehensive city guide that gives you information regarding the cities, the public attractions it has to offer, and what kind of charitable organizations are deeply connected with this city. The city guide emphasizes cities and attractions that directly help the city in terms of revenue or relief, and also highlights charities people can donate to.
 
 ----
 
 ## APIs
-**RESTful APIs for Model Data:**
+**モデルデータのRESTful API:**
 * [**Cities API**](https://www.roadgoat.com/business/cities-api): https://www.roadgoat.com/business/cities-api
 * [**Charitable Organizations API**](https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397): https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397
 * [**Attractions API**](https://opentripmap.io/product): https://opentripmap.io/product 
@@ -94,50 +115,50 @@
 
 ----
 
-## Models
-- Cities (within USA)
-- Attractions (within USA)
-- Charitable Organizations (within USA)
+## モデル
+- 都市 (アメリカ内)
+- 観光名所 (アメリカ内)
+- 慈善団体 (アメリカ内)
 
 <details>
-    <summary markdown="span"> Learn More About Instance Counts </summary>
-    <b>Instances per Model:</b>
+    <summary markdown="span"> インスタンス数について </summary>
+    <b>モデルあたりのインスタンス数:</b>
     <ul>
-        <li> 531 Cities
-        <li> 5573 Nonprofits/Charities
-        <li> 2643 Attractions
+        <li> 531 都市
+        <li> 5573 慈善団体
+        <li> 2643 観光名所
     </ul>
 </details>
 
 ----
 
 <details>
-    <summary markdown="span"> Learn More About Filtering and Sorting Attributes </summary>
-    <b>Filter and Sorting Attributes</b>
+    <summary markdown="span"> フィルター、ソートの属性について </summary>
+    <b>フィルター、ソートの属性</b>
     <ul>
         <li> Cities
             <ul>
-                <li> Population Size
-                <li> Time Zone
-                <li> Budget Score
-                <li> Walk Score
-                <li> "Known-For" Tags
+                <li> 人口数
+                <li> タイムゾーン
+                <li> 予算スコア
+                <li> ウォークスコア
+                <li> "通称"タグ
             </ul>
         <li> Attractions
             <ul>
-                <li> City
-                <li> State
-                <li> Popularity
-                <li> Cultural Heritage Recognition Status
-                <li> "Attribute" Tags
+                <li> 都市
+                <li> 州
+                <li> 知名度
+                <li> 文化遺産認知度
+                <li> "属性"タグ
             </ul>
         <li> Charities
             <ul>
-                <li> Cause Area
-                <li> Star Rating
-                <li> City
-                <li> State
-                <li> Donation Deductibility Status
+                <li> 応用範囲
+                <li> 評価
+                <li> 都市
+                <li> 州
+                <li> 寄付控除可能性のステータス
             </ul>
     </ul>
 </details>
@@ -145,31 +166,31 @@
 ----
 
 <details>
-    <summary> Learn More About Additional Searchable Attributes </summary>
-    <b>Additional Searchable Attributes</b>
+    <summary> 追加の検索項目 </summary>
+    <b>追加の検索項目</b>
     <ul>
         <li> Cities
             <ul>
-                <li> Name
-                <li> State
-                <li> Bike Score
-                <li> Timezone
-                <li> Cost of Living
+                <li> 都市名
+                <li> 州
+                <li> バイクスコア
+                <li> タイムゾーン
+                <li> 居住費
             </ul>
         <li> Attractions
             <ul>
-                <li> Year of Establishment (if applicable)
-                <li> Nearby Charities
-                <li> Religious Affiliations (if any)
-                <li> Hours of Operation (if available)
-                <li> Contact Information
+                <li> 設立年
+                <li> 近隣の慈善団体
+                <li> 所属宗教
+                <li> 営業時間
+                <li> 連絡先情報
             </ul>
         <li> Charities
             <ul>
                 <li> IRS Subsection
-                <li> IRS Organization Classification
-                <li> Financial Rating
-                <li> Accountability Rating
+                <li> IRSの組織分類
+                <li> 財務評価
+                <li> 信頼性
                 <li> Charity EIN
             </ul>
     </ul>
@@ -178,66 +199,64 @@
 ----
 
 <details>
-    <summary> Learn More About Rich Media Used</summary>
-    <b> Media within Instance Pages </b>
+    <summary> 使用されたリッチメディア </summary>
+    <b> インスタンスページにおけるメディア </b>
     <ul>
         <li> Cities
             <ul>
-                <li> City Images
-                <li> City Description
-                <li> Embedded Map of the City
-                <li> Iframe of City walk score
+                <li> 画像
+                <li> 概要
+                <li> 地図情報
+                <li> ウォークスコアのIFrame
             </ul>
         <li> Attractions
             <ul>
-                <li> Attraction Image
-                <li> Description of Attraction
-                <li> Embedded Website of the Attraction
-                <li> Embedded Map
-                <li> Attraction contact information
-                <li> Attraction reviews
+                <li> 画像
+                <li> 概要
+                <li> 該当URL
+                <li> 地図情報
+                <li> 連絡先情報
+                <li> レビュー
             </ul>
         <li> Charities
             <ul>
-                <li> Image of Charity Logo
-                <li> Charity Mission Statement
-                <li> Embedded Website of the Charity
+                <li> ロゴの画像
+                <li> ミッションステートメント
+                <li> 該当URL
             </ul>
     </ul>
 </details>
 
 ----
 
-**Questions this site will answer:**
-1. What are some of the places I could visit if I were to visit this city?
-2. What are some charities connected with this city?
-3. What charities do these public actions support?
+**このサイトは下記の質問に答えます：**
+1. 「この都市を訪れたら、訪れるべき観光名所は？」
+2. 「この都市に関連した慈善団体は？」
+3. 「これらの公共施設が支援する慈善団体は？」
 
 ----
 
-### Comments
-We implemented all of the user stories that were possible for phase 2 except for those which we received too late to actually implement. We will implement all of the leftover issues in phase 3.
+### コメント
+フェーズ2で可能だったユーザーストーリーはすべて実装しましたが、実装が遅れたものはフェーズ3で実装する予定です。
 
-We would like to thank Cole Weinmann and Kristina Zhou for providing explicit permission to use some of their designed components for this project.
-Please check out their GitLab:
+このプロジェクトで使用することに明示的に許可を与えてくれたCole Weinmann氏とKristina Zhou氏に感謝します。設計されたコンポーネントの一部を使用させていただきました。
+GitLab情報：
 - Cole Weinmann: [`@coleweinman`](https://gitlab.com/coleweinman)
 - Kristina Zhou: [`@zhou.kristina`](https://gitlab.com/zhou.kristina)
 
-We would like to thank the UniverCity website for providing ideas and concepts
-that this site was used to bootstrap off of.
+このサイトを起動するために使用されたアイデアとコンセプトを提供してくれた『UniverCity』ウェブサイトに感謝します。
 
-Please check out UniverCity:
+『UniverCity』のページ:
 - https://www.univercity.me/
 
-We would like to thank Nathaniel Nemenzo for providing explicit permission to use some of his testing components for this project (Selenium Tests):
-Please check out his GitLab:
+このプロジェクトでテストコンポーネントの一部を使用することに明示的に許可を与えてくれたNathaniel Nemenzo氏に感謝します(Seleniumテスト)。
+GitLab情報：
 - Nathaniel Nemenzo [`@Nathaniel-Nemenzo`](https://gitlab.com/Nathaniel-Nemenzo)
 
-We would like to thank GetThatBread GitLab for providing ideas and concepts for Selenium testing that we could bootstrap off of.
-
-Please check out GetThatBread GitLab:
+Seleniumテストのアイデアとコンセプトを提供してくれたGetThatBread GitLabに感謝します。
+GitLab情報：
 - https://gitlab.com/Nathaniel-Nemenzo/getthatbread/
 
-Developer Notes:
-- You can learn more about how each of the tools are used by hovering over their respective cards in the About page
-- Due to lack of robust data in the `Attractions` model, you can expect a different (more refined) dataset in the next Phase (this message will be updated once that change has taken effect)
+開発者向けメモ:
+- 各ツールがどのように使用されるかについては、Aboutページの各カードにマウスを乗せることで詳細を学ぶことができます。
+- Attractionsモデルに十分なデータがないため、次のフェーズでは異なる(より精巧な)データセットが期待できます(このメッセージは変更が実施されたら更新されます)。

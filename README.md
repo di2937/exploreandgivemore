@@ -1,6 +1,12 @@
 本ページは元のGitLabの概要を日本語に翻訳したものです。
 (元のGitLabページ->https://gitlab.com/RikGhosh487/exploreandgivemore)
 
+----
+
+Explore&GiveMoreのWebページ：https://www.exploreandgivemore.me
+
+----
+
 # Explore&GiveMore
 
 
@@ -88,7 +94,7 @@
 ## Project Information
 
 - **最新のGit SHA**: `264de20720467090356d817ea60e2148a10d501f`
-- **プロジェクトのWebページ:** [exploreandgivemore.me](https://www.exploreandgivemore.me)
+- **プロジェクトのWebページ:** [exploreandgivemore.me](https://www.exploreandgivemore.me) (こちらのページは現在停止中)
 - **GitLab Pipelne:** [GitLab Pipeline](https://gitlab.com/RikGhosh487/exploreandgivemore/-/blob/main/.gitlab-ci.yml)
 - **GitLabレポジトリのURL:** [ExploreAndGiveMore](https://gitlab.com/RikGhosh487/exploreandgivemore)
 

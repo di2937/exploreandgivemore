@@ -3,7 +3,7 @@
 
 ----
 
-Explore&GiveMoreのWebページ：https://www.exploreandgivemore.me
+Explore&GiveMoreのWebページ：https://www.explorengivemore.me
 
 ----
 

@@ -109,6 +109,7 @@ const PEOPLE: Person[] = [
 			`I am a fourth year computer science major at UT Austin. I am from Houston, TX` +
 			` and I enjoy reading and watching shows in my free time`,
 		image: mariana_img,
+		leader: "Phase 4 Lead",
 		emails: ["marianamedina@utexas.edu"],
 		username: "marianamedina",
 		commits: 0,
@@ -128,6 +129,8 @@ const PEOPLE: Person[] = [
 			"di2937@cs.utexas.edu",
 			"dimeonvin@gmail.com",
 			"dime@Dimes-MacBook-Pro.local",
+			"dime@Dimes-MacBook-Pro-2.local",
+			"dime@Dimes-MacBook-Pro-3.local",
 			"dime@wireless-10-148-103-179.public.utexas.edu"
 		],
 		username: "dimeonvin",

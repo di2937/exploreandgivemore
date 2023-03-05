@@ -94,9 +94,9 @@ function SearchBar(props: SearchBarProps) {
 	useEffect(() => {
 		if (searchParams.get("query") != null) {
 			setQuery(
-				searchParams
-					.toString()
-					.substring(searchParams.toString().indexOf("=") + 1)
+				searchParams.get("query")!
+					// .toString()
+					// .substring(searchParams.toString().indexOf("=") + 1)
 			);
 		}
 	}, [searchParams.get("query")]);

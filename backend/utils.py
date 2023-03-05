@@ -203,6 +203,7 @@ def apply_search_filters(base_query, fields, values) -> Query:
     base_search_string = "%"  # wildcard token for 0 or more
     for character in values.split(","):
         base_search_string += character.strip() + "%"
+    space_sep = [("%" + x.replace(",", "") + "%") for x in values.split(" ")]
     print(base_search_string)
     search_args = list()
     for field in fields:
@@ -211,5 +212,6 @@ def apply_search_filters(base_query, fields, values) -> Query:
                 func.array_to_string(field, ",").ilike(base_search_string)
             )
         else:
-            search_args.append(field.ilike(base_search_string))
+            for val in space_sep:
+                search_args.append(field.ilike(val))
     return base_query.filter(or_(*search_args))

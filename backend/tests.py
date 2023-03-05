@@ -1024,7 +1024,7 @@ class UnitTests(TestCase):
         (RUN_PHASE_3 or RUN_SEARCHES), "Skipping phase 3 and non-searching unit tests"
     )
     def test_60(self):
-        url = BASE_ATTRACTIONS + "?query=Military+Museums"
+        url = BASE_ATTRACTIONS + "?query=Museums"
         with app.test_request_context(url):
             ret = get_attractions()
 
@@ -1033,7 +1033,7 @@ class UnitTests(TestCase):
         self.assertEqual(ret["data"]["per_page"], 20)
 
         for attr in ret["data"]["attractions"]:
-            self.assertIn("Military Museums", attr["kinds"])
+            self.assertIn("Museums", attr["kinds"])
 
     # Test for searching in cities
     @skipUnless(
@@ -1077,9 +1077,9 @@ class UnitTests(TestCase):
         (RUN_PHASE_3 or RUN_SEARCHES), "Skipping phase 3 and non-searching unit tests"
     )
     def test_63(self):
-        url1 = BASE_ATTRACTIONS + "?query=not+going+to+match1"
-        url2 = BASE_CITIES + "?query=not+going+to+match2"
-        url3 = BASE_CHARITIES + "?query=not+going+to+match3"
+        url1 = BASE_ATTRACTIONS + "?query=notgoingtomatch1"
+        url2 = BASE_CITIES + "?query=notgoingtomatch2"
+        url3 = BASE_CHARITIES + "?query=notgoingtomatch3"
         with app.test_request_context(url1):
             ret1 = get_attractions()
         with app.test_request_context(url2):

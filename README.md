@@ -1,5 +1,5 @@
 本ページは元のGitLabの概要を日本語に翻訳したものです。
-(元のGitLabページ->https://gitlab.com/RikGhosh487/exploreandgivemore)
+(元のGitLabページ: https://gitlab.com/RikGhosh487/exploreandgivemore)
 
 ----
 

@@ -1,0 +1,12 @@
+.bgimg {
+	background-color: #012750;
+	opacity: 1;
+	background-size: auto;
+	height: fit-content;
+	padding-bottom: 50px;
+	background-image: url(background.jpg);
+}
+
+p.ex1 {
+	padding-bottom: 25px;
+}

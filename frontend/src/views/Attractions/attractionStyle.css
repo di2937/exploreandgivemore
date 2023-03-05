@@ -1,0 +1,11 @@
+.attractionModelCard {
+	margin: 8px;
+	display: inline-block;
+	height: 600px;
+	width: 400px;
+}
+
+.attractionActionArea {
+	height: 600px;
+	width: 400px;
+}

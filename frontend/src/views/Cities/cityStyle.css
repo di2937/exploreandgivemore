@@ -1,0 +1,20 @@
+.cityModelCard {
+	margin: 8px;
+	display: inline-block;
+	height: 600px;
+	width: 400px;
+}
+
+.cityActionArea {
+	height: 600px;
+	width: 400px;
+}
+
+.city_background {
+	background-color: #012750;
+	opacity: 1;
+	background-size: auto;
+	height: auto;
+	padding-bottom: 50px;
+	background-image: url(city_background.jpg);
+}

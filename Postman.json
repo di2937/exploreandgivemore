@@ -1,0 +1,399 @@
+{
+	"info": {
+		"_postman_id": "77c913c2-a896-478a-afdc-1d6ab36d70d4",
+		"name": "exploreandgivemore API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+            "name": "cities",
+            "item": [
+                {
+                    "name": "GET cities in base URL",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET cities in base URL\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.status).to.eql(\"success\");",
+									"});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/cities",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "cities"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET city by ID",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET city by ID\", function() {",
+                                    "    pm.response.to.have.status(200);",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.status).to.eql(\"success\");",
+                                    "});"
+                                ]
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/cities/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cities",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET city by invalid ID",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET city by invalid ID\", function() {",
+                                    "    pm.response.to.have.status(200);",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.status).to.eql(\"error\");",
+                                    "});"
+                                ]
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/cities/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "cities",
+                                ":id"
+                            ],
+                            "variable": [
+								{
+									"key": "id",
+									"value": "0"
+								}
+							]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+		},
+        {
+            "name": "attractions",
+            "item": [
+                {
+                    "name": "GET attractions in base URL",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET attractions in base URL\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.status).to.eql(\"success\");",
+									"});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/attractions",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "attractions"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET attraction by ID",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET attraction by ID\", function() {",
+                                    "    pm.response.to.have.status(200);",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.status).to.eql(\"success\");",
+                                    "});"
+                                ]
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/attractions/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"attractions",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET attraction by invalid ID",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET attraction by invalid ID\", function() {",
+                                    "    pm.response.to.have.status(200);",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.status).to.eql(\"error\");",
+                                    "});"
+                                ]
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/attractions/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "attractions",
+                                ":id"
+                            ],
+                            "variable": [
+								{
+									"key": "id",
+									"value": "0"
+								}
+							]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+		},
+        {
+            "name": "charities",
+            "item": [
+                {
+                    "name": "GET charities in base URL",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET charities in base URL\", function () {",
+									"    pm.response.to.have.status(200);",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.status).to.eql(\"success\");",
+									"});"
+                                ],
+                                "type": "text/javascript"
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/charities",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "charities"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET charity by ID",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET charity by ID\", function() {",
+                                    "    pm.response.to.have.status(200);",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.status).to.eql(\"success\");",
+                                    "});"
+                                ]
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/charities/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"charities",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET charity by invalid ID",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.test(\"GET charity by invalid ID\", function() {",
+                                    "    pm.response.to.have.status(200);",
+                                    "    var jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.status).to.eql(\"error\");",
+                                    "});"
+                                ]
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}/charities/:id",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "charities",
+                                ":id"
+                            ],
+                            "variable": [
+								{
+									"key": "id",
+									"value": "0"
+								}
+							]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+		}
+	],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "api.exploreandgivemore.me"
+        }
+    ]
+}

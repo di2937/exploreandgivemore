@@ -6,6 +6,7 @@ import roadgoat_img from "../../images/roadgoat.png";
 import opentrip_img from "../../images/opentrip.png";
 import clearskies_img from "../../images/clearskies.png";
 import marshmallow_img from "../../images/marshmallow.png";
+import namecheap_img from "../../images/namecheap.png";
 
 interface Info {
 	name: string;
@@ -54,8 +55,8 @@ const TOOLCHAIN: Info[] = [
 		description: "Domain Name Registration",
 		extended_description: "Namecheap was used to register our domain name",
 		link: "https://www.namecheap.com/",
-		imageURL:
-			"https://saasreviewhq.com/wp-content/uploads/2021/04/namecheap.svg"
+		image:
+			namecheap_img
 	},
 	{
 		name: "Docker",

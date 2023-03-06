@@ -1,118 +1,43 @@
-本ページは元のGitLabの概要を日本語に翻訳したものです。
+本ページはポートフォリオ用のもので、開発で使用していたレポジトリは下のものになります。  
 (元のGitLabページ: https://gitlab.com/RikGhosh487/exploreandgivemore)
 
 ----
 
-Explore&GiveMoreのWebページ：https://www.explorengivemore.me
+**開発したWebページ：** https://www.explorengivemore.me  
+（なお、Aboutページにて各メンバーのコミット数のみ正しく反映されていない状況にあります。）
+
+『元のGitLabページ』に記載してあるチームでデプロイしたページのURL（https://www.exploreandgivemore.me) は、アカウントの無料利用枠の期限などの理由で現在停止しております。  
+『開発したWebページ』のURLは、私個人でAWS Amplify、Namecheap（ドメイン登録）を用いてデプロイし直したページになります。（バックエンドはCloud Runを用いてデプロイ）
 
 ----
 
-# Explore&GiveMore
+## プロジェクトについて
 
+本プロジェクトはテキサス大学オースティン校（The Univerisity of Texas at Austin）の[CS373: Software Engineering](https://www.cs.utexas.edu/users/downing/cs373/index.html)の授業にて制作したものです。  
 
-**プロジェクト提案：** Explore＆GiveMoreウェブサイトは、市の情報、公共の観光名所、そしてどのような慈善団体がこの市と深く関わっているかについて、包括的な都市ガイドとなることを目指しています。この都市ガイドは、収益や救済の面で市を直接支援する都市と観光名所を強調し、人々が寄付できる慈善団体を紹介することを目的としています。
+プロジェクト作成にあたっての詳細説明ページ：https://www.cs.utexas.edu/users/downing/cs373/projects/IDB.html
 
-
-
-## 開発チーム
-| 名前 | GitLabID | 大学ID
-| :--: | :--: | :--: |
-| Rik Ghosh | [`RikGhosh487`](https://gitlab.com/RikGhosh487) | `rgg857` |
-| Katherine Eisen | [`katherine-eisen`](https://gitlab.com/katherine-eisen) | `kee663` |
-| Mariana Medina | [`marianamedina`](https://gitlab.com/marianamedina) | `mm94863` |
-| Daimu Iwata | [`dimeonvin`](https://gitlab.com/dimeonvin) | `di2937` |
-| Jarrod Brown | [`jarrod-brown`](https://gitlab.com/jarrod-brown) | `jcb5852` |
+プロジェクト制作において達成しなければいけない項目：
+- [IMDB](https://www.imdb.com/)を模した、特定のトピックに関する役立つ情報を提供するWebアプリケーションの開発。
+- プロジェクトには、RESTful APIを使用し、異なる３つのデータセットのスクレイピングをしなければいけない、また、何らかの形で市民の関与を促進するようなものを開発しなければいけない。
+- 最低３つのデータモデルが必要であり、各モデルは他の2つのデータモデルに接続されていなければいけない。
+- 各モデルのすべてのインスタンスには、フィード、画像、マップ、テキスト、ビデオなどの異なるメディアが含まれていなければいけない。
 
 ----
 
-** フェーズ１ リーダー: Rik Ghosh**
-> 役割:
-> - ミーティングのまとめ
-> - デザインの選択肢やバグに関する質問の明確化
-> - Gitlにおけるタスクとイシューの管理
+# 開発したプロジェクト：Explore&GiveMore
 
-| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
-| :--: | :--: | :--: |
-| Rik Ghosh | 15 hrs  | 20 hrs |
-| Katherine Eisen | 15 hrs | 17 hrs |
-| Mariana Medina | 13 hrs | 15 hrs |
-| Daimu Iwata | 15 hrs | 20 hrs |
-| Jarrod Brown | 10 hrs | 8 hrs  |
+
+**サービス内容：** Explore＆GiveMoreウェブサイトは、都市の情報、またその市に関連する観光名所、慈善団体について、包括的な都市ガイドとなることを目指しています。この都市ガイドは、収益や救済の面で市を直接支援する都市と観光名所を強調し、人々が寄付できる慈善団体を紹介することを目的としています。
 
 ----
 
-**フェーズ２ リーダー: Daimu Iwata**
-> 役割:
-> - APIからのデータ抽出の概算、スクレイピングスクリプトの実装
-> - Google Cloud Runを利用してのバックエンドのホスティングの作成、更新されたインスタンスのデプロイ
-> - モデルの画像などのリッチデータのためのAPIスクレイピングを実装
-> - GitLab runnerのパイプライン
-> - テストコンポーネントのバグの修正
-
-| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
-| :--: | :--: | :--: |
-| Rik Ghosh | 40 hrs  | 50 hrs |
-| Katherine Eisen | 25 hrs | 33 hrs |
-| Mariana Medina | 25 hrs | 28 hrs |
-| Daimu Iwata | 40 hrs | 50 hrs |
-| Jarrod Brown | 30 hrs | 15 hrs  |
+**使用した技術一覧：** 右ページの”Toolchain"項目より下に記載：https://www.explorengivemore.me/about  
+（各ツールがどのように使用されるかについては、各カードにカーソルを合わせることで詳細を見ることができます。）
 
 ----
 
-**フェーズ３ リーダー: Katherine Eisen**
-> 役割:
-> - フェーズ３におけるイシューの提案
-> - モデルページにおける「検索/ソート/フィルター」バーの作成
-> - 検索、ソート、フィルターにおけるフロントエンドテストの追加
-
-| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
-| :--: | :--: | :--: |
-| Rik Ghosh | 25 hrs  | 15 hrs |
-| Katherine Eisen | 30 hrs | 18 hrs |
-| Mariana Medina | 25 hrs | 15 hrs |
-| Daimu Iwata | 30 hrs | 20 hrs |
-| Jarrod Brown | 10 hrs | 15 hrs  |
-
-----
-
-**フェーズ４ リーダー: Mariana Medina**
-> 役割:
-> - フロントエンドページの整理
-> - フロントエンドのファイルのフォーマット
-> - プレゼンテーションのデザイン
-
-| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
-| :--: | :--: | :--: |
-| Rik Ghosh | 10 hrs  | 8 hrs |
-| Katherine Eisen | 5 hrs | 2 hrs |
-| Mariana Medina | 5 hrs | 3 hrs |
-| Daimu Iwata | 2 hrs | 2 hrs |
-| Jarrod Brown | 2 hrs | 2 hrs  |
-
-----
-
-## Project Information
-
-- **最新のGit SHA**: `264de20720467090356d817ea60e2148a10d501f`
-- **プロジェクトのWebページ:** [exploreandgivemore.me](https://www.exploreandgivemore.me) (こちらのページは現在停止中)
-- **GitLab Pipelne:** [GitLab Pipeline](https://gitlab.com/RikGhosh487/exploreandgivemore/-/blob/main/.gitlab-ci.yml)
-- **GitLabレポジトリのURL:** [ExploreAndGiveMore](https://gitlab.com/RikGhosh487/exploreandgivemore)
-
-<details>
-    <summary markdown="span"> 以前のSHAs </summary>
-    <ul>
-        <li> Phase I - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/b0a7d66442e7e2fd6beb882a8465b2a0e424d81a" target="blank_">b0a7d66</a>
-        <li> Phase II - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/f7ee67699948f803fb0c83a5d4bfc03b1c23ac1b" target="blank_">f7ee676</a>
-        <li> Phase III - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/264de20720467090356d817ea60e2148a10d501f" target="blank_">264de20</a>
-        <li> Phase IV - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/f9ff5a4311d3b93036625e6dc60c573ef1c2a9e5" target="blank_">f9ff5a4</a>
-    </ul>
-</details>
-
-
-----
-
-## APIs
-**モデルデータのRESTful API:**
+**各モデルのデータ収集のためにスクレイピングで使用したRESTful API:**
 * [**Cities API**](https://www.roadgoat.com/business/cities-api): https://www.roadgoat.com/business/cities-api
 * [**Charitable Organizations API**](https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397): https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397
 * [**Attractions API**](https://opentripmap.io/product): https://opentripmap.io/product 
@@ -120,18 +45,18 @@ Explore&GiveMoreのWebページ：https://www.explorengivemore.me
 
 ----
 
-## モデル
-- 都市 (アメリカ内)
-- 観光名所 (アメリカ内)
-- 慈善団体 (アメリカ内)
+**データモデル**
+- Cities（in USA)
+- Attractions (in USA)
+- Charities (in USA)
 
 <details>
     <summary markdown="span"> インスタンス数について </summary>
     <b>モデルあたりのインスタンス数:</b>
     <ul>
-        <li> 531 都市
-        <li> 5573 慈善団体
-        <li> 2643 観光名所
+        <li> 都市　531 
+        <li> 慈善団体　5573 
+        <li> 観光名所　2643 
     </ul>
 </details>
 
@@ -234,15 +159,103 @@ Explore&GiveMoreのWebページ：https://www.explorengivemore.me
 
 ----
 
-**このサイトは下記の質問に答えます：**
-1. 「この都市を訪れたら、訪れるべき観光名所は？」
-2. 「この都市に関連した慈善団体は？」
-3. 「これらの公共施設が支援する慈善団体は？」
+## 開発チーム
+| 名前 | GitLabID | 大学ID
+| :--: | :--: | :--: |
+| Rik Ghosh | [`RikGhosh487`](https://gitlab.com/RikGhosh487) | `rgg857` |
+| Katherine Eisen | [`katherine-eisen`](https://gitlab.com/katherine-eisen) | `kee663` |
+| Mariana Medina | [`marianamedina`](https://gitlab.com/marianamedina) | `mm94863` |
+| Daimu Iwata | [`dimeonvin`](https://gitlab.com/dimeonvin) | `di2937` |
+| Jarrod Brown | [`jarrod-brown`](https://gitlab.com/jarrod-brown) | `jcb5852` |
 
 ----
 
-### コメント
-フェーズ2で可能だったユーザーストーリーはすべて実装しましたが、実装が遅れたものはフェーズ3で実装する予定です。
+** フェーズ１ リーダー: Rik Ghosh**
+> 役割:
+> - ミーティングのまとめ
+> - デザインの選択肢やバグに関する質問の明確化
+> - Gitlにおけるタスクとイシューの管理
+
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
+| :--: | :--: | :--: |
+| Rik Ghosh | 15 hrs  | 20 hrs |
+| Katherine Eisen | 15 hrs | 17 hrs |
+| Mariana Medina | 13 hrs | 15 hrs |
+| Daimu Iwata | 15 hrs | 20 hrs |
+| Jarrod Brown | 10 hrs | 8 hrs  |
+
+----
+
+**フェーズ２ リーダー: Daimu Iwata**
+> 役割:
+> - APIからのデータ抽出の概算、スクレイピングスクリプトの実装
+> - Google Cloud Runを利用してのバックエンドのホスティングの作成、更新されたインスタンスのデプロイ
+> - モデルの画像などのリッチデータのためのAPIスクレイピングを実装
+> - GitLab runnerのパイプライン
+> - テストコンポーネントのバグの修正
+
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
+| :--: | :--: | :--: |
+| Rik Ghosh | 40 hrs  | 50 hrs |
+| Katherine Eisen | 25 hrs | 33 hrs |
+| Mariana Medina | 25 hrs | 28 hrs |
+| Daimu Iwata | 40 hrs | 50 hrs |
+| Jarrod Brown | 30 hrs | 15 hrs  |
+
+----
+
+**フェーズ３ リーダー: Katherine Eisen**
+> 役割:
+> - フェーズ３におけるイシューの提案
+> - モデルページにおける「検索/ソート/フィルター」バーの作成
+> - 検索、ソート、フィルターにおけるフロントエンドテストの追加
+
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
+| :--: | :--: | :--: |
+| Rik Ghosh | 25 hrs  | 15 hrs |
+| Katherine Eisen | 30 hrs | 18 hrs |
+| Mariana Medina | 25 hrs | 15 hrs |
+| Daimu Iwata | 30 hrs | 20 hrs |
+| Jarrod Brown | 10 hrs | 15 hrs  |
+
+----
+
+**フェーズ４ リーダー: Mariana Medina**
+> 役割:
+> - フロントエンドページの整理
+> - フロントエンドのファイルのフォーマット
+> - プレゼンテーションのデザイン
+
+| 名前 | 実装にかかる予想時間 | 実際にかかった時間 |
+| :--: | :--: | :--: |
+| Rik Ghosh | 10 hrs  | 8 hrs |
+| Katherine Eisen | 5 hrs | 2 hrs |
+| Mariana Medina | 5 hrs | 3 hrs |
+| Daimu Iwata | 2 hrs | 2 hrs |
+| Jarrod Brown | 2 hrs | 2 hrs  |
+
+----
+
+## Project Information
+
+- **最新のGit SHA**: `264de20720467090356d817ea60e2148a10d501f`
+- **GitLab Pipelne:** [GitLab Pipeline](https://gitlab.com/RikGhosh487/exploreandgivemore/-/blob/main/.gitlab-ci.yml)
+- **GitLabレポジトリのURL:** [ExploreAndGiveMore](https://gitlab.com/RikGhosh487/exploreandgivemore)
+
+<details>
+    <summary markdown="span"> 各フェーズにおけるSHA </summary>
+    <ul>
+        <li> Phase I - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/b0a7d66442e7e2fd6beb882a8465b2a0e424d81a" target="blank_">b0a7d66</a>
+        <li> Phase II - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/f7ee67699948f803fb0c83a5d4bfc03b1c23ac1b" target="blank_">f7ee676</a>
+        <li> Phase III - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/264de20720467090356d817ea60e2148a10d501f" target="blank_">264de20</a>
+        <li> Phase IV - <a href="https://gitlab.com/RikGhosh487/exploreandgivemore/-/commit/f9ff5a4311d3b93036625e6dc60c573ef1c2a9e5" target="blank_">f9ff5a4</a>
+    </ul>
+</details>
+
+
+----
+
+### 備考
 
 このプロジェクトで使用することに明示的に許可を与えてくれたCole Weinmann氏とKristina Zhou氏に感謝します。設計されたコンポーネントの一部を使用させていただきました。
 GitLab情報：
@@ -261,7 +274,3 @@ GitLab情報：
 Seleniumテストのアイデアとコンセプトを提供してくれたGetThatBread GitLabに感謝します。
 GitLab情報：
 - https://gitlab.com/Nathaniel-Nemenzo/getthatbread/
-
-開発者向けメモ:
-- 各ツールがどのように使用されるかについては、Aboutページの各カードにマウスを乗せることで詳細を学ぶことができます。
-- Attractionsモデルに十分なデータがないため、次のフェーズでは異なる(より精巧な)データセットが期待できます(このメッセージは変更が実施されたら更新されます)。

@@ -12,15 +12,13 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
-import site_logo from "../../images/swe-logo-bg.png";
+import site_logo from "../../images/logo.png";
 
 function Navigation() {
 	const navItems: string[] = [
-		"Cities",
-		"Attractions",
-		"Charities",
-		"Visualizations",
-		"Provider Visualizations",
+		"Math",
+		"English",
+		"Computer Science",
 		"About",
 		"Search"
 	];
@@ -52,12 +50,14 @@ function Navigation() {
 					<img
 						src={site_logo}
 						alt="Logo"
-						width="110px"
-						height="auto"
+						width="auto"
+						height="50vh"
+						className="logo"
 					/>
 				)}
 				<Typography
 					variant="h4"
+					fontWeight={ "bold" }
 					noWrap
 					component="div"
 					onClick={() => handleCloseNavMenu("/home")}
@@ -66,10 +66,10 @@ function Navigation() {
 						mr: 2,
 						display: { xs: "none", md: "flex" },
 						cursor: "pointer",
-						fontSize: "25px"
+						fontSize: "25px",
 					}}
 				>
-					Explore & Give More
+					TECHs<br/> US
 				</Typography>
 				{isMobile ? (
 					<>
@@ -146,12 +146,16 @@ function Navigation() {
 								cursor: "pointer"
 							}}
 						>
-							Explore & Give More
+							TECHs US
 						</Typography>
 					</>
 				) : (
 					<>
-						<Box sx={{ flexGrow: 1, display: { xs: "flex" } }}>
+						<Box 
+							justifyContent="flex-end"
+							paddingRight={ 20 }
+							sx={{ flexGrow: 1, display: { xs: "flex" } }}
+						>
 							<MenuItem
 								sx={{ color: "#fff" }}
 								onClick={() => handleCloseNavMenu("/")}
@@ -159,7 +163,7 @@ function Navigation() {
 								<Typography
 									textAlign="center"
 									variant="h6"
-									sx={{ fontSize: "18px" }}
+									sx={{ fontSize: "23px" }}
 								>
 									Home
 								</Typography>
@@ -180,7 +184,7 @@ function Navigation() {
 									<Typography
 										textAlign="center"
 										variant="h6"
-										sx={{ fontSize: "18px" }}
+										sx={{ fontSize: "23px" }}
 									>
 										{item}
 									</Typography>

@@ -1,6 +1,6 @@
-import cityImage from "../../images/home/cities.jpg";
-import attractionImage from "../../images/home/attractions.jpg";
-import charityImage from "../../images/home/charity.jpg";
+import mathImage from "../../images/home/math.png";
+import englishImage from "../../images/home/english.png";
+import csImage from "../../images/home/cs.png";
 
 interface Entry {
 	name: string;
@@ -11,22 +11,22 @@ interface Entry {
 
 const MODELS: Entry[] = [
 	{
-		name: "Cities",
-		desc: "Explore a new city",
-		img: cityImage,
-		link: "/cities"
+		name: "Math",
+		desc: "中学１年〜３年",
+		img: mathImage,
+		link: "/math"
 	},
 	{
-		name: "Attractions",
-		desc: "Discover New Attractions",
-		img: attractionImage,
-		link: "/attractions"
+		name: "English",
+		desc: "中学１年〜３年",
+		img: englishImage,
+		link: "/english"
 	},
 	{
-		name: "Charities",
-		desc: "Learn about different charities",
-		img: charityImage,
-		link: "/charities"
+		name: "Computer Science",
+		desc: "高校１年〜",
+		img: csImage,
+		link: "/computer_science"
 	}
 ];
 

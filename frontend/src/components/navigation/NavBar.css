@@ -2,3 +2,7 @@
 	background: linear-gradient(to right, #86afdb, #86afdb) no-repeat 0 0 /
 		cover;
 }
+
+.logo {
+	padding-left: 2vw;
+}

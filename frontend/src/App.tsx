@@ -1,10 +1,10 @@
-import Attractions from "./views/Attractions/AttractionGridPage";
+import English from "./views/Attractions/AttractionGridPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Charities from "./views/Charities/CharityGridPage";
-import CharitiesRows from "./views/Charities/CharityRowPage";
+import ComputerScience from "./views/Charities/CharityRowPage";
 import CharityInstancePage from "./views/Charities/CharityInstancePage";
 import Navigation from "./components/navigation/NavBar";
-import Cities from "./views/Cities/CityGridPage";
+import Math from "./views/Cities/CityGridPage";
 import About from "./views/About/About";
 import Home from "./views/Home/Home";
 import Search from "./views/Search/Search";
@@ -26,17 +26,17 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/home" element={<Home />} />
-					<Route path="/cities" element={<Cities />} />
+					<Route path="/math" element={<Math />} />
 					<Route
 						path="/cities/:cityId"
 						element={<CityInstancePage />}
 					/>
-					<Route path="/charities" element={<CharitiesRows />} />
+					<Route path="/computer_science" element={<ComputerScience />} />
 					<Route
 						path="charity/:id"
 						element={<CharityInstancePage />}
 					/>
-					<Route path="/attractions" element={<Attractions />} />
+					<Route path="/english" element={<English />} />
 					<Route
 						path="/attractions/:attractionId"
 						element={<AttractionInstancePage />}
